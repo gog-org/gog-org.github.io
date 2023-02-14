@@ -19,7 +19,20 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: inherit;
+  color: inherit !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+li {
+  list-style-type: none;
 }
 
 /*****
@@ -72,10 +85,6 @@ header {
   padding: 0;
 }
 
-.header-list>li {
-  list-style-type: none;
-}
-
 .header-list>li+li::before {
   content: "";
   border-left: 2px solid #b4b4b4;
@@ -86,7 +95,58 @@ header {
   padding: 0 1rem;
 }
 
+/*****
+Footer
+*****/
 
+footer {
+  background-color: #4d4d4d;
+  padding: 2rem 0 3rem;
+  color: #ebebeb;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.footer-content>div {
+  font-weight: bold;
+}
+
+.footer ul {
+  margin: 0.4rem 0;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.footer li {
+  padding: 0;
+  margin: 0.1rem 0;
+}
+
+.footer-content a {
+  position: relative;
+  transition: 0.3s;
+  transition-property: width;
+}
+
+.footer-content a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ebebeb;
+  transition: 0.3s;
+}
+
+.footer-content a:hover::after {
+  width: 100%;
+}
 
 .content {
   background-color: #ebebeb;
