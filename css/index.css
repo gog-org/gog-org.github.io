@@ -1,0 +1,21 @@
+h2 {
+  font-size: 1.4rem;
+  margin:0.8em 0em 0.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 1.2em 0em 0.4em;
+}
+
+p {
+  margin-left: 1rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
