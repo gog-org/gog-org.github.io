@@ -15,15 +15,3 @@ p {
 .text-bold {
   font-weight: bold;
 }
-
-.text-underline {
-  text-decoration: underline;
-}
-
-.links {
-  margin-left: 2rem;
-}
-
-.links > div {
-  margin: 0.2rem 0;
-}

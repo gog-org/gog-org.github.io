@@ -159,3 +159,15 @@ main {
   min-height: 90vh;
   padding: 1rem 2rem;
 }
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.links {
+  margin-left: 2rem;
+}
+
+.links > div {
+  margin: 0.2rem 0;
+}
