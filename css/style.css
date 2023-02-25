@@ -19,7 +19,7 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: inherit !important;
+  color: inherit;
 }
 
 h1,

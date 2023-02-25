@@ -19,3 +19,11 @@ p {
 .text-underline {
   text-decoration: underline;
 }
+
+.links {
+  margin-left: 1rem;
+}
+
+.links > div {
+  margin: 0.2rem 0;
+}
