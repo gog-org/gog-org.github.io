@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/*****
+Global
+*****/
+html {
+  color-scheme: light;
+}
+
+body {
+  color: #282c34;
+  background: white;
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+/*****
+Header
+*****/
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #1f1f1f;
+  box-sizing: border-box;
+  border-bottom: 4px solid #296dff;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.header {
+  display: flex;
+}
+
+.header>* {
+  margin: 0 1rem;
+}
+
+.header-logo {
+  position: relative;
+  content: "";
+  width: 100px;
+  height: 2rem;
+}
+
+.header-logo>a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header-list>li+li::before {
+  content: "";
+  border-left: 2px solid #b4b4b4;
+  height: 0.8rem;
+}
+
+.header-list>li>a {
+  padding: 0 1rem;
+}
+
+/*****
+Footer
+*****/
+
+footer {
+  background-color: #4d4d4d;
+  padding: 2rem 0 3rem;
+  color: #ebebeb;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.footer-content>div {
+  font-weight: bold;
+}
+
+.footer ul {
+  margin: 0.4rem 0;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.footer li {
+  padding: 0;
+  margin: 0.1rem 0;
+}
+
+.footer-content a {
+  position: relative;
+  transition: 0.3s;
+  transition-property: width;
+}
+
+.footer-content a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ebebeb;
+  transition: 0.3s;
+}
+
+.footer-content a:hover::after {
+  width: 100%;
+}
+
+/*****
+Common
+*****/
+
+.content {
+  background-color: #ebebeb;
+}
+
+main {
+  background: white;
+  margin: 0 3rem;
+  margin-top: 3rem;
+  min-height: 90vh;
+  padding: 1rem 2rem;
+}
+
+p {
+  margin-left: 1rem;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.links {
+  margin-left: 2rem;
+}
+
+.links > div {
+  margin: 0.2rem 0;
+}

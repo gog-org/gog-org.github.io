@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="img/icons/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="GoG homepage"
-    />
-    <link rel="apple-touch-icon" href="img/icons/logo192.png" />
-    <link rel="manifest" href="manifest.json" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+      ></script>
+    <!-- sigen: remove from -->
+    <script src="/js/devLoader.js"></script>
+    <!-- sigen: remove to -->
+    <!-- sigen: include ./common/head.html -->
     <title>GoG HomePage</title>
+    <meta name="description" content="GoG homepage" />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
-    <h1>Welcome to GoG homepage!</h1>
+    <header>
+      <!-- sigen: include ./common/header.html -->
+    </header>
+    <div class="content">
+      <main>
+        <h2>ゲーマーの集い(GoG)</h2>
+        <p>
+          ゲーマーの集い(GoG)は、ゲームが好きな<span class="text-bold">ゲーマーの皆さんのためのコミュニティ</span>です。
+          ゲームに関する交流はもちろん、他にも様々な人が様々な分野に興味を持ってコミュニティで交流することができます。
+          </br>
+          コミュニティは主にDiscord上で交流しています。GoGに興味を持たれた方は是非Discordサーバーにご参加ください。
+        </p>
+
+        <h3>Discord招待</h3>
+        <p>
+          私達はDiscordで主に交流しているコミュニティです。
+          少しでも興味を持たれた方は、<a class="text-underline" href="/rules/discord/">ルールを読んだ上で</a>ぜひご参加ください。
+        </p>
+        <div class="links">
+          <div>
+            <a class="text-underline" href="/rules/discord/">ルールを読む</a>
+          </div>
+          <div>
+            <a class="text-underline" href="https://discord.gg/2WaYMQPGm5">Discordサーバーへ参加する</a>
+          </div>
+        </div>
+        <!-- TODO: Discord widget -->
+
+        <h3>NEWS</h3>
+        <p>Official Twitter (開設予定)</p>
+      </main>
+    </div>
+    <footer>
+      <!-- sigen: include ./common/footer.html -->
+    </footer>
   </body>
 </html>
