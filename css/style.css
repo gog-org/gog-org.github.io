@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 /*****
 Global
@@ -19,7 +19,7 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: inherit !important;
+  color: inherit;
 }
 
 h1,
@@ -157,4 +157,5 @@ main {
   margin: 0 3rem;
   margin-top: 3rem;
   min-height: 90vh;
+  padding: 1rem 2rem;
 }
